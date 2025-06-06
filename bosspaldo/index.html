@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Premium Scatter Guide at Casino Strategy para sa Pinakamataas na Panalo">
+  <meta name="keywords" content="strategy sa casino, gabay sa scatter, tips sa pagsusugal, strategy para manalo">
+  <meta name="author" content="Boss Paldo">
+  <title>Boss Paldo Premium Strategy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #ffcc00;
+      --primary-dark: #e6b800;
+      --secondary-color: #4a6fa5;
+      --success-color: #00cc66;
+      --error-color: #ff3333;
+      --warning-color: #ff9900;
+      --dark-color: #1a1a1a;
+      --light-color: #f8f9fa;
+      --gray-color: #6c757d;
+      --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0 0 80px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://static.tildacdn.one/tild3035-3464-4336-a239-323139623535/apps1874314062288212.jpeg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #333;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(26, 26, 26, 0.95);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+      border-bottom: 3px solid var(--primary-color);
+      position: relative;
+      z-index: 10;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+
+    /* Navigation */
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(5px);
+    }
+    
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    
+    .nav-logo {
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-links li {
+      margin-left: 30px;
+    }
+    
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transition);
+      position: relative;
+    }
+    
+    .nav-links a:hover {
+      color: var(--primary-color);
+    }
+    
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary-color);
+      transition: var(--transition);
+    }
+    
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Professional Center Box Styles */
+    .professional-box {
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.97);
+      border-radius: 16px;
+      box-shadow: var(--box-shadow);
+      overflow: hidden;
+      transition: var(--transition);
+      position: relative;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .professional-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    }
+
+    .box-header {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: var(--dark-color);
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .box-content {
+      padding: 30px;
+    }
+
+    .box-content h3 {
+      color: var(--dark-color);
+      margin-top: 0;
+      font-size: 1.4em;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .box-content h3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: var(--primary-color);
+      border-radius: 3px;
+    }
+
+    .box-content p {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 1.05em;
+      line-height: 1.7;
+    }
+
+    .box-features {
+      margin: 25px 0;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+
+    .feature-icon {
+      background: var(--primary-color);
+      color: var(--dark-color);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      flex-shrink: 0;
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+
+    .feature-text {
+      flex: 1;
+    }
+
+    .box-cta {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1em;
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+      gap: 8px;
+      border: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: var(--dark-color);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(135deg, #ffd700, #ff9900);
+      color: var(--dark-color);
+    }
+
+    /* Ribbon for special offers */
+    .ribbon {
+      position: absolute;
+      top: 15px;
+      right: -30px;
+      background: var(--error-color);
+      color: white;
+      padding: 8px 35px;
+      transform: rotate(45deg);
+      font-weight: bold;
+      font-size: 0.9em;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    /* Step sections styling */
+    .step {
+      background: rgba(255, 255, 255, 0.95);
+      width: 80%;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid var(--primary-color);
+      transition: var(--transition);
+    }
+
+    .step:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .step h2 {
+      color: var(--dark-color);
+      margin-top: 0;
+      font-size: 1.8em;
+      text-align: center;
+    }
+
+    .indicator {
+      margin: 20px 0;
+    }
+
+    .indicator p {
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .indicator .red {
+      background-color: rgba(255, 0, 0, 0.1);
+      border-left: 4px solid var(--error-color);
+    }
+
+    .indicator .green {
+      background-color: rgba(0, 255, 0, 0.1);
+      border-left: 4px solid var(--success-color);
+    }
+
+    .disclaimer {
+      background: rgba(255, 255, 255, 0.95);
+      width: 80%;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      font-size: 0.9em;
+      color: var(--gray-color);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    
+    .testimonials h2 {
+      text-align: center;
+      color: white;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+    
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    
+    .testimonial-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .testimonial-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      color: var(--dark-color);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    
+    .testimonial-name {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    
+    .testimonial-text {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(26, 26, 26, 0.95);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      backdrop-filter: blur(5px);
+      border-top: 2px solid var(--primary-color);
+      font-size: 0.9em;
+      z-index: 10;
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .footer-links {
+      display: flex;
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-left: 20px;
+    }
+    
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    
+    .footer-links a:hover {
+      color: var(--primary-color);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .professional-box, .step, .disclaimer {
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+      }
+      
+      h1 {
+        font-size: 2.2em;
+      }
+      
+      .box-content h3, .step h2 {
+        font-size: 1.3em;
+      }
+      
+      .ribbon {
+        font-size: 0.8em;
+        right: -35px;
+        padding: 6px 30px;
+      }
+      
+      .footer-content {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .footer-links {
+        margin-top: 10px;
+      }
+      
+      .footer-links li {
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Boss Paldo Premium Strategy</h1>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="nav-logo">BOSS PALDO</a>
+      <ul class="nav-links">
+        <li><a href="#features">Mga Tampok</a></li>
+        <li><a href="#strategy">Strategy</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Professional Center Box -->
+  <div class="professional-box" id="features">
+    <div class="ribbon">EXCLUSIVE OFFER</div>
+    <div class="box-header">
+       Premium Scatter Guide 2025
+    </div>
+    <div class="box-content">
+      <h3>I-maximize ang Iyong Mga Panalo</h3>
+      <p>Ang aming propesyonal na koponan ay nagsuri ng daan-daang casino patterns upang ibigay sa iyo ang pinakatumpak na scatter predictions. Sumali sa libu-libong matagumpay na manlalaro na nagtala ng 300% na pagtaas sa kanilang mga panalo gamit ang aming sistema.</p>
+      
+      <div class="box-features">
+        <div class="feature-item">
+          <div class="feature-icon">✓</div>
+          <div class="feature-text">
+            <strong>Real-time Scatter Alerts:</strong> Agarang notification kapag may mainit na slots
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">✓</div>
+          <div class="feature-text">
+            <strong>Subok na Mga Strategy:</strong> Tested ng aming team ng propesyonal na gamblers
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">✓</div>
+          <div class="feature-text">
+            <strong>24/7 Suporta:</strong> Available ang aming mga eksperto anumang oras
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">✓</div>
+          <div class="feature-text">
+            <strong>Exclusive na Mga Bonus:</strong> Mga espesyal na alok para lamang sa aming premium members
+          </div>
+        </div>
+      </div>
+      
+      <div class="box-cta">
+        <a href="https://www.helpslot.win/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+         Click here
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="strategy">
+    <h2>1️⃣ Pumili ng Casino</h2>
+    <p>
+      Maaari kang mamili mula sa listahan ng mga online casino na aming inirerekomenda. Piliin lamang kung saan mo nais maglaro — lahat ng options ay makikita sa ibaba.
+      <div class="box-cta">
+        <a href="https://www.taya713.com/?f=UIHall" target="_blank" rel="noopener " class="btn btn-primary">
+www.taya713.com       </a>
+      </div>
+
+      <div class="box-cta">
+        <a href="https://www.b20520.com/register?affiliateCode=dl0001&referralCode=quo5820" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+  www.b20520.com
+        </a>
+      </div>
+
+      <div class="box-cta">
+        <a href="https://www.jili9.games/register?referralCode=cpy3363&affiliateCode=rich88" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          www.jili9.games
+        </a>
+      </div>
+
+      <div class="box-cta">
+        <a href="https://www.pdex6.xyz/register?referralCode=rhz4557&affiliateCode=hytj333" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          www.pdex6.xyz
+        </a>
+      </div>
+
+      <div class="box-cta">
+        <a href="https://www.primogaming8.com/register?r=phu7790" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+         primogaming8.com
+        </a>
+      </div>
+
+      <div class="box-cta">
+        <a href="https://www.mobilecasino88.net/register?referralCode=dbl6207" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+     www.mobilecasino88.ne      
+  </a>
+      </div>
+
+      <div class="box-cta">
+        <a href="https://www.manilaplay.asia/register?referralCode=hqp4523" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        www.manilaplay.asia        </a>
+      </div>
+    </p>
+  </div>
+
+  <div class="step">
+    <h2>2️⃣ Tingnan ang Casino Scatter Status</h2>
+    <p>Sa ibabang bahagi ng page, makikita mo ang <strong>Casino Scatter Indicator</strong> — ito ay makakatulong upang malaman kung ang isang casino ay kasalukuyang nagbibigay ng panalo o hindi:</p>
+    <div class="indicator">
+      <p class="red">🔴 Red Sign – Ibig sabihin, mataas ang tiyansa ng panalo ng mga players sa casino na ito.</p>
+      <p class="green">
+        🟢 Green Sign – Ibig sabihin, mababa ang tiyansa ng panalo. Karaniwan dito ang casino mismo ang nakikinabang.
+      </p>
+      <div class="box-cta">
+        <a href="https://www.helpslot.win/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Tingnan ang Kasalukuyang Status
+        </a>
+      </div>
+    </div>
+  </div>
+
+ <!--- <section class="testimonials" id="testimonials">
+    <h2>Mga Testimonial ng Aming Mga Miyembro</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">JM</div>
+          <div>
+            <div class="testimonial-name">Juan Manuel</div>
+          </div>
+        </div>
+        <div class="testimonial-text">
+          "Tumaas ang aking mga panalo ng 400% simula nang sundin ko ang mga strategy ni Boss Paldo. Ang scatter alerts ay sobrang tumpak at nakatulong para iwasan ang mga losing streak."
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">SR</div>
+          <div>
+            <div class="testimonial-name">Sarah Reyes</div>
+          </div>
+        </div>
+        <div class="testimonial-text">
+          "Ang support team ay kahanga-hanga! Tinulungan nila akong maunawaan ang mga patterns at ngayon ay kaya ko nang hulaan kung kailan dapat dagdagan ang aking mga taya. Napakalaking tulong ng serbisyong ito!"
+        </div>
+      </div>
+    </div>
+  </section>-->
+  
+
+  <div class="disclaimer">
+    <strong>⚠️ Paalala sa aming mga mahal na kliyente:</strong>
+    Magsugal lamang ayon sa iyong kakayahan at huwag gagamitin ang perang hindi mo kayang mawala. Magtakda ng mga limitasyon para sa iyong sarili at magpahinga paminsan-minsan. Ang pagsusugal ay dapat na libangan lamang, hindi paraan upang kumita ng pera.
+  </div>
+
+   <!--<footer>
+    <div class="footer-content">
+      <div>&copy; 2025 Boss Paldo Premium Strategy</div>
+   <ul class="footer-links">
+        <li><a href="#">Mga Tuntunin ng Serbisyo</a></li>
+        <li><a href="#">Patakaran sa Privacy</a></li>
+        <li><a href="#">Responsableng Pagsusugal</a></li>
+      </ul>-->
+    </div>
+  </footer>
+</body>
+</html>
